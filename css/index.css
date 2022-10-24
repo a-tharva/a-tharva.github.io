@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.background {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom left, #fc00ff -12%, #00dbde 100%);
+    background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.social-links {
+    position: relative;
+}
+
+.main-page {
+    min-height: 99%;
+    width: auto;
+    max-width: 100%;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 20px;
+    background-color: #ffffff2a;
+    position: relative;
+}
+
+.social-links {
+    min-height: 5%;
+    width: auto;
+    min-width: 85%;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #ffffff4a;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+table {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+th {
+    padding-left: 2vw;;
+}
+
+tr {
+    position: absolute;
+}
+
+.row {
+    box-sizing: border-box;
+    padding-top: 1%;
+    margin: 0 -5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    margin: auto 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    top: 10px;
+}
+
+
+.profile-img {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 85%;
+    top: 35%;
+    border-radius: 10vw;
+    height: 20vw;
+    width: 20vw;
+    min-height: 174px;
+    min-width: 174px;
+    background-color: #ffffff5a;
+    /* background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center; */
+}
