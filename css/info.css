@@ -1,0 +1,32 @@
+.info-para {
+    transform: translateX(-25%);
+    position:absolute;
+    bottom: 10vw;
+    left: 25%;
+    width: fit-content;
+    border: 0px;
+    padding: 40px;
+    padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 505px) {
+    #about {
+        font-size: 1.6vh;
+    }
+}
+
+#about {
+    text-align: justify;
+    color: white;
+    font-size: 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.modules {
+    padding: 0;
+    margin-top: 0;
+}
+
+.modules > li {
+    display: inline-block;
+}
